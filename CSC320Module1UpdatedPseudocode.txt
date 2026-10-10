@@ -1,0 +1,41 @@
+
+BEGIN
+
+    CREATE Scanner object for keyboard input
+
+    DISPLAY "Enter your first name: "
+    INPUT firstName
+
+    DISPLAY "Enter your last name: "
+    INPUT lastName
+
+    DISPLAY "Enter your street address: "
+    INPUT streetAddress
+
+    DISPLAY "Enter your city: "
+    INPUT city
+
+    DISPLAY "Enter your ZIP code: "
+    INPUT zipCode
+
+    CALL displayInformation(firstName, lastName, streetAddress, city, zipCode)
+
+    CLOSE Scanner
+
+END
+
+
+BEGIN
+
+(firstName, lastName, streetAddress, city, zipCode)
+
+    
+    DISPLAY "===== PERSONAL INFORMATION ====="
+    DISPLAY "First Name: " + firstName
+    DISPLAY "Last Name: " + lastName
+    DISPLAY "Street Address: " + streetAddress
+    DISPLAY "City: " + city
+    DISPLAY "ZIP Code: " + zipCode
+    DISPLAY "================================"
+
+END 
